@@ -26,16 +26,16 @@ const Message = styled.p`
   color: ${props => props.theme.comments.color};
 `;
 
-const Comment = props => (
+const Comment = ({ comment }) => (
   <Row>
     <Avatar
       comment={true}
-      avatar={props.comment.avatar}
-      name={props.comment.name}
+      avatar={comment.avatar}
+      name={comment.name}
     />
     <Col>
-      <Name>{props.comment.name}</Name>
-      <Message>{props.comment.text}</Message>
+      <Name>{comment.name}</Name>
+      <Message>{comment.text}</Message>
     </Col>
   </Row>
 );

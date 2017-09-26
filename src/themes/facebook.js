@@ -43,13 +43,14 @@ const facebook = {
   copy: {
     margin: "6px 0px 0px -45px",
     color: "#1d2129",
-    size: "14px"
+    size: "20px"
   },
   actions: {
     border: "1px solid #e5e5e5",
     color: "#616770",
+    active: "#0084ff",
     weight: "bold",
-    size: "13px",
+    size: "18px",
     padding: "4px 4px 4px 0",
     margin: "12px 0px 0px 0px"
   },
@@ -57,7 +58,7 @@ const facebook = {
     background: "#f6f7f9",
     padding: "11px 11px 0px 11px",
     color: "#1d2129",
-    size: "12px",
+    size: "20px",
     radius: "0px 0px 4px 4px",
     user: {
       color: "#365899",

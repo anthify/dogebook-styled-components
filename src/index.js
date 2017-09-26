@@ -7,8 +7,7 @@ import logger from "redux-logger";
 import reducer from "./reducers/";
 
 import { ThemeProvider } from "styled-components";
-import theme from "./themes/facebook";
-
+import theme from "./themes/facebook"; // or twitter
 import Feed from "./containers/Feed";
 
 const store = createStore(reducer, applyMiddleware(logger));
