@@ -44,20 +44,21 @@ const twitter = {
   copy: {
     margin: "6px 0px 0px 0px",
     color: "#1d2129",
-    size: "14px"
+    size: "20px"
   },
   actions: {
     color: "#616770",
+    active: "#19CF86",
     weight: "bold",
-    size: "13px",
+    size: "18px",
     padding: "4px 4px 4px 48px",
-    margin: "12px 0px 0px 0px"
+    margin: "12px 0px 12px 0px"
   },
   comments: {
     background: "#f5f8fa",
     padding: "11px 11px 11px 48px",
     color: "#1d2129",
-    size: "12px",
+    size: "18px",
     radius: "0px 0px 4px 4px",
     border: "1px solid #e6ecf0",
     user: {

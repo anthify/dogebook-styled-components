@@ -9,16 +9,21 @@ const ActionsPanel = styled.div`
 `;
 
 const Action = styled.span`
+  cursor: pointer;
+  margin-right: 10px;
   font-size: ${props => props.theme.actions.size};
-  color: ${props => props.theme.actions.color};
+  color: ${props => props.active ? props.theme.actions.active : props.theme.actions.color};
   font-weight: ${props => props.theme.actions.weight};
 `;
 
-const Actions = props => (
+const Actions = ({ toggleComments, toggleLike, id, comments, likes, liked }) => (
   <ActionsPanel>
-    <Action
-      onClick={() => props.toggleComments(props.id)}
-      >{props.comments.length} Comments</Action>
+    <Action active={liked} onClick={() => toggleLike(id)}>
+      {likes} Likes
+    </Action>
+    <Action onClick={() => toggleComments(id)}>
+      {comments.length} Comments
+    </Action>
   </ActionsPanel>
 );
 

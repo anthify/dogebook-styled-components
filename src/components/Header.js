@@ -19,7 +19,7 @@ const Logo = styled.span`
   margin: ${props => props.theme.header.margin};
 `;
 
-const Header = props => (
+const Header = () => (
   <Bar>
     <Logo>
       <span aria-label="dog" role="img">

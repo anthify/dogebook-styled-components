@@ -21,9 +21,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const Avatar = props => (
-  <Wrapper comment={props.comment}>
-    <img alt={props.name} src={props.avatar} />
+const Avatar = ({ comment, name, avatar }) => (
+  <Wrapper comment={comment}>
+    <img alt={name} src={avatar} />
   </Wrapper>
 );
 
